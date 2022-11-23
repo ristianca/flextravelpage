@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: rgb(182, 204, 178);
+}
+
+/*Header*/
+header{
+    background-color: black;
+    color: azure;
+    text-align: center;
+}
+
+/*Navigation*/
+
+.navflex {
+    background-color: rgb(25, 126, 42);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    opacity: 80%;
+    border-bottom: 4px solid;
+    border-bottom-color: black;
+    position: sticky;
+    top: 0%;
+    width: 100%;
+}
+
+.navflex>a {
+    background-color: antiquewhite;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 25px;
+
+
+}
+
+/*Front Banner*/
+.introbanner {
+    display: none;
+}
+
+/*Main Content*/
+
+.flexmaincontent {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+
+    background-color: aqua;
+}
+
+
+
+.flexmaincontent>div {
+    margin: auto;
+    padding: 1%;
+
+}
+
+.dropbtn{
+    display: none;
+}
+@media screen and (min-width:601px) {
+
+
+    /*Front Banner*/
+    .introbanner {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .introbanner>img {
+
+        object-fit: cover;
+        min-width: 100%;
+        border: 3px solid green;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    /*Navigation*/
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+    .navflex
+    {
+        display: none;
+    }
+    .navflex:hover {
+        flex-direction: column;
+        padding:0%
+    }
+
+    .navflex>a {
+        border-radius: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 4px;
+
+    }
+
+    /*Main Content*/
+
+    .flexmaincontent {
+ 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .flexmaincontent>div {
+        margin: auto;
+    }
+
+}
